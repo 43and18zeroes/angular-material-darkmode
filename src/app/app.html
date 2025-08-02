@@ -4,11 +4,11 @@
   </button>
   <button
     mat-icon-button
-    (click)="darkMode.set(!darkMode())"
+    (click)="themeService.toggleTheme()"
     class="mr-8"
     aria-label="Toggle dark mode"
   >
-    <mat-icon>{{ darkMode() ? "light_mode" : "bedtime" }}</mat-icon>
+    <mat-icon>{{ themeService.darkMode() ? "light_mode" : "bedtime" }}</mat-icon>
   </button>
 </mat-toolbar>
 <mat-sidenav-container>
