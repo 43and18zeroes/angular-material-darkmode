@@ -8,8 +8,8 @@ mat-toolbar {
 
 mat-sidenav-container {
   @include custom-mixins.mat-theme-transition();
-  height: calc(100vh - 64px);
   background-color: #303030;
+  height: calc(100vh - 64px);
 
   @media (width < 600px) {
     height: calc(100vh - 56px);
@@ -24,6 +24,7 @@ mat-sidenav-container {
 
   mat-sidenav-content {
     padding: 16px;
+    box-sizing: border-box;
   }
 }
 
