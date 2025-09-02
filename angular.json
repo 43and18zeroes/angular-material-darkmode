@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crud": {
+    "angular-material-darkmode": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "crud:build:production"
+              "buildTarget": "angular-material-darkmode:build:production"
             },
             "development": {
-              "buildTarget": "crud:build:development"
+              "buildTarget": "angular-material-darkmode:build:development"
             }
           },
           "defaultConfiguration": "development"
