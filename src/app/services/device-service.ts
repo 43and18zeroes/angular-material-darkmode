@@ -23,7 +23,6 @@ import {
   providedIn: 'root',
 })
 export class DeviceService {
-  private breakpointObserver = inject(BreakpointObserver);
   private platformId = inject(PLATFORM_ID);
   private renderer: Renderer2;
   isAndroid: boolean = false;
