@@ -28,8 +28,13 @@ export class CustomSidenav {
   menuItems = signal<MenuItem[]>([
     {
       icon: 'edit_square',
-      label: 'Data Entry',
-      route: '/data-entry',
+      label: 'Start',
+      route: '/start',
+    },
+        {
+      icon: 'edit_square',
+      label: 'Info',
+      route: '/info',
     },
   ]);
 }

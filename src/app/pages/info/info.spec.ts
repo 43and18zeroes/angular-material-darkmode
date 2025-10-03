@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataEntryComponent } from './data-entry-component';
+import { Info } from './info';
 
-describe('DataEntryComponent', () => {
-  let component: DataEntryComponent;
-  let fixture: ComponentFixture<DataEntryComponent>;
+describe('Info', () => {
+  let component: Info;
+  let fixture: ComponentFixture<Info>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DataEntryComponent]
+      imports: [Info]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DataEntryComponent);
+    fixture = TestBed.createComponent(Info);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,14 +1,19 @@
 import { Routes } from '@angular/router';
-import { DataEntryComponent } from './pages/data-entry-component/data-entry-component';
+import { Start } from './pages/start/start';
+import { Info } from './pages/info/info';
 
 export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'data-entry',
+    redirectTo: 'start',
   },
   {
-    path: 'data-entry',
-    component: DataEntryComponent,
+    path: 'start',
+    component: Start,
+  },
+  {
+    path: 'info',
+    component: Info,
   },
 ];
