@@ -34,9 +34,12 @@ export class App {
   isDesktop = signal(true);
   private breakpointSub?: Subscription;
 
-  constructor(
-    private breakpointObserver: BreakpointObserver
-  ) {}
+  constructor(private breakpointObserver: BreakpointObserver) {
+    effect(() => {
+      const _width = this.deviceService.viewportWidth();
+      this.collapsed.set(true);
+    });
+  }
 
   ngOnInit() {
     this.themeService.initTheme();
