@@ -26,15 +26,7 @@ export class CustomSidenav {
   iconMargin = computed(() => (this.sideNavCollapsed() ? '12px' : '16px'));
 
   menuItems = signal<MenuItem[]>([
-    {
-      icon: 'home',
-      label: 'Start',
-      route: '/start',
-    },
-        {
-      icon: 'info',
-      label: 'Info',
-      route: '/info',
-    },
+    { icon: 'home', label: 'Start', route: '/' },
+    { icon: 'info', label: 'Info', route: '/info' },
   ]);
 }
