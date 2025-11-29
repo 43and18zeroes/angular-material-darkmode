@@ -10,9 +10,11 @@ mat-sidenav-container {
   @include custom-mixins.mat-theme-transition();
   background-color: #303030;
   height: calc(100vh - 64px);
+  height: calc(100dvh - 64px);
 
   @media (width < 600px) {
     height: calc(100vh - 56px);
+    height: calc(100dvh - 56px);
   }
 
   mat-sidenav {
