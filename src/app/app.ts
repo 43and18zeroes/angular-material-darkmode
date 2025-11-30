@@ -28,21 +28,24 @@ export class App {
   protected readonly title = signal('Angular Material Darkmode');
   themeService = inject(ThemeService);
   collapsed = signal(true);
-  isDesktop = signal(true);
+  viewportWidth = signal(window.innerWidth);
   private resizeSub?: Subscription;
 
   constructor() {}
 
   ngOnInit() {
     this.themeService.initTheme();
+
     this.resizeSub = fromEvent(window, 'resize').subscribe(() => {
+      this.viewportWidth.set(window.innerWidth);
       this.collapsed.set(true);
     });
   }
 
   sidenavWidth = computed(() => (this.collapsed() ? '81px' : '250px'));
   contentMarginLeft = computed(() => {
-    if (!this.isDesktop()) {
+    const width = this.viewportWidth();
+    if (width < 600) {
       return '81px';
     }
     return this.collapsed() ? '81px' : '250px';
