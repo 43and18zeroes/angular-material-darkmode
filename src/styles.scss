@@ -45,3 +45,15 @@ h1 {
 h1, h2 {
   font-weight: 500;
 }
+
+a {
+  color: light-dark(#0000ee, #8ab4f8);
+
+  &:active {
+    color: light-dark(#ff0000, #ff6b6b);
+  }
+
+  &:visited {
+    color: light-dark(#551a8b, #c58af9);
+  }
+}
