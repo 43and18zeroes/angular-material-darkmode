@@ -17,5 +17,10 @@ export const routes: Routes = [
     title: 'Info - Angular Material Darkmode',
     loadComponent: () => import('./pages/info/info').then((m) => m.Info),
   },
-  { path: '**', redirectTo: '' },
+  {
+    path: '**',
+    title: '404 - Page not found - My App Store',
+    loadComponent: () =>
+      import('./pages/not-found/not-found').then((m) => m.NotFound),
+  },
 ];
