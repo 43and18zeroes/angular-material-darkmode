@@ -1,3 +1,4 @@
+// custom-sidenav.scss
 a {
   margin-bottom: 12px;
 
@@ -10,4 +11,8 @@ a {
 
 a:last-child {
   margin-bottom: 0;
+}
+
+.mdc-list-item:focus::before {
+    background: rgba(0 0 0 / 0);
 }
